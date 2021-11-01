@@ -4,7 +4,7 @@
 
 # [Vaultwarden-TCB](https://github.com/CeeIM/Vaultwarden-TCB)
 
-Bitwarden 是一款自由且开源的密码管理服务，用户可在加密的保管库中存储敏感信息（例如网站登录凭据）。Bitwarden 平台提供有多种客户端应用程序，包括网页用户界面、桌面应用，浏览器扩展、移动应用以及命令行界面。
+在腾讯云开发 Tencent CloudBase 上部署 Vaultwarden (Bitwarden)
 
 ## 部署
 
