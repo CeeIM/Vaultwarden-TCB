@@ -2,12 +2,12 @@
   "version": "2.0",
   "envId": "{{env.ENV_ID}}",
   "framework": {
-    "name": "bitwarden",
+    "name": "vaultwarden",
     "plugins": {
       "client": {
         "use": "@cloudbase/framework-plugin-container",
         "inputs": {
-          "serviceName": "bitwarden",
+          "serviceName": "vaultwarden",
           "servicePath": "/",
           "localPath": "./",
           "uploadType": "package",
@@ -16,10 +16,10 @@
             "WEBSOCKET_ENABLED": "false",
             "ENABLE_DB_WAL": "false",
             "DB_NAME": "bitwarden",
-            "DATABASE_URL": "mysql://{{env.DB_USER}}:{{env.DB_PASS}}@{{env.DB_HOST}}:{{env.DB_PORT}}/bitwarden"
+            "DATABASE_URL": "mysql://{{env.DB_USER}}:{{env.DB_PASS}}@{{env.DB_HOST}}:{{env.DB_PORT}}/vaultwarden"
           },
           "volumeMounts": {
-            "/data": "bitwarden-cfs"
+            "/data": "vaultwarden-cfs"
           }
         }
       }
@@ -28,11 +28,11 @@
       "addons": [
         {
           "type": "CFS",
-          "name": "bitwarden-cfs"
+          "name": "vaultwarden-cfs"
         },
         {
           "type": "CynosDB",
-          "name": "bitwarden",
+          "name": "vaultwarden",
           "envMap": {
             "IP": "DB_HOST",
             "PORT": "DB_PORT",
