@@ -2,7 +2,7 @@
   "version": "2.0",
   "envId": "{{env.ENV_ID}}",
   "framework": {
-    "name": "bitwarden",
+    "name": "vaultwarden",
     "plugins": {
       "client": {
         "use": "@cloudbase/framework-plugin-container",
@@ -15,10 +15,10 @@
             "imageUrl": "vaultwarden/server:latest"
           },
           "envVariables": {
-            "WEBSOCKET_ENABLED": "true"
+            "WEBSOCKET_ENABLED": "false"
           },
           "volumeMounts": {
-            "/data": "bitwarden-cfs"
+            "/data": "vaultwarden-cfs"
           }
         }
       }
@@ -27,7 +27,7 @@
       "addons": [
         {
           "type": "CFS",
-          "name": "bitwarden-cfs"
+          "name": "vaultwarden-cfs"
         }
       ]
     }
