@@ -1,4 +1,4 @@
-FROM bitwardenrs/server:latest
+FROM vaultwarden/server:latest
 
 # 使用 mariadb-client 代替 mysql-client
 # debian 下安装 mysql-client 较困难
