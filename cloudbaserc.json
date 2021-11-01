@@ -12,10 +12,10 @@
           "uploadType": "image",
           "containerPort": 80,
           "imageInfo": {
-            "imageUrl": "bitwardenrs/server:latest"
+            "imageUrl": "vaultwarden/server:latest"
           },
           "envVariables": {
-            "WEBSOCKET_ENABLED": "false"
+            "WEBSOCKET_ENABLED": "true"
           },
           "volumeMounts": {
             "/data": "bitwarden-cfs"
