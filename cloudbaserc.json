@@ -15,7 +15,7 @@
           "envVariables": {
             "WEBSOCKET_ENABLED": "false",
             "ENABLE_DB_WAL": "false",
-            "DB_NAME": "bitwarden",
+            "DB_NAME": "vaultwarden",
             "DATABASE_URL": "mysql://{{env.DB_USER}}:{{env.DB_PASS}}@{{env.DB_HOST}}:{{env.DB_PORT}}/vaultwarden"
           },
           "volumeMounts": {
