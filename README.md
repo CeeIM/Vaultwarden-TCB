@@ -2,17 +2,17 @@
   <img height="100px" src="./logo.png" center />
 </p>
 
-# [Vaultwarden](https://github.com/dani-garcia/vaultwarden)
+# [Vaultwarden-TCB](https://github.com/CeeIM/Vaultwarden-TCB)
 
 Bitwarden 是一款自由且开源的密码管理服务，用户可在加密的保管库中存储敏感信息（例如网站登录凭据）。Bitwarden 平台提供有多种客户端应用程序，包括网页用户界面、桌面应用，浏览器扩展、移动应用以及命令行界面。
 
 ## 部署
 
-本项目基于开源项目 [CloudBase Framework](https://github.com/Tencent/cloudbase-framework) 开发部署，支持一键云端部署
+本项目基于 [腾讯云开发框架](https://github.com/Tencent/cloudbase-framework) + [Vaultwarden](https://github.com/dani-garcia/vaultwarden) 支持一键云端部署
 
-MySQL 部署（MySQL + 文件存储）[![](https://main.qcloudimg.com/raw/67f5a389f1ac6f3b4d04c7256438e44f.svg)](https://console.cloud.tencent.com/tcb/env/index?action=CreateAndDeployCloudBaseProject&tdl_anchor=github&tdl_site=0&appUrl=https://github.com/CeeIM/vaultwarden)
+MySQL 部署（MySQL + 文件存储）[![](https://main.qcloudimg.com/raw/67f5a389f1ac6f3b4d04c7256438e44f.svg)](https://console.cloud.tencent.com/tcb/env/index?action=CreateAndDeployCloudBaseProject&tdl_anchor=github&tdl_site=0&appUrl=https://github.com/CeeIM/Vaultwarden-TCB)
 
-SQLite 部署（文件存储）[![](https://main.qcloudimg.com/raw/67f5a389f1ac6f3b4d04c7256438e44f.svg)](https://console.cloud.tencent.com/tcb/env/index?action=CreateAndDeployCloudBaseProject&appUrl=https%3A%2F%2Fgithub.com%2FCeeIM%2Fvaultwarden&branch=cfs-only)
+SQLite 部署（文件存储）[![](https://main.qcloudimg.com/raw/67f5a389f1ac6f3b4d04c7256438e44f.svg)](https://console.cloud.tencent.com/tcb/env/index?action=CreateAndDeployCloudBaseProject&appUrl=https://github.com/CeeIM/Vaultwarden-TCB&branch=cfs-only)
 
 ### 配置
 
